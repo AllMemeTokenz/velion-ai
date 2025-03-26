@@ -121,7 +121,7 @@ export default function Home() {
                       >
                         <RadioGroup.Item
                           value={lora.model}
-                          className="group relative flex flex-col justify-start rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                          className="group relative flex flex-col justify-start rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2979FF]"
                           required
                         >
                           <div className="relative">
@@ -166,7 +166,7 @@ export default function Home() {
                       autoComplete="off"
                       value={prompt}
                       onChange={(e) => setPrompt(e.target.value)}
-                      className="block w-full resize-none rounded-md border border-gray-300 bg-white px-4 py-3 text-sm text-gray-600 placeholder-gray-400 hover:border-gray-400/70 focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-blue-500"
+                      className="block w-full resize-none rounded-md border border-gray-300 bg-white px-4 py-3 text-sm text-gray-600 placeholder-gray-400 hover:border-gray-400/70 focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-[#2979FF]"
                     />
 
                     {selectedLora && (
@@ -177,7 +177,7 @@ export default function Home() {
                               type="button"
                               key={i}
                               onClick={() => setPrompt(suggestion.prompt)}
-                              className="shrink-0 rounded-full bg-gray-200 px-2.5 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500"
+                              className="shrink-0 rounded-full bg-gray-200 px-2.5 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2979FF]"
                             >
                               {suggestion.label}
                             </button>
@@ -194,7 +194,7 @@ export default function Home() {
                   <a
                     href="https://api.together.xyz/settings/api-keys"
                     target="_blank"
-                    className="inline-flex items-center gap-0.5 font-mono tracking-tight transition hover:text-blue-500"
+                    className="inline-flex items-center gap-0.5 font-mono tracking-tight transition hover:text-[#2979FF]"
                   >
                     [Optional] Together AI API Key
                     <ArrowUpRightIcon className="size-3" />
@@ -214,7 +214,7 @@ export default function Home() {
                 <button
                   disabled={isFetching}
                   type="submit"
-                  className="inline-flex w-full items-center justify-center gap-1 rounded-md bg-cyan-600 px-4 py-2 font-medium text-gray-100 shadow hover:bg-cyan-600/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 disabled:opacity-50"
+                  className="inline-flex w-full items-center justify-center gap-1 rounded-md bg-[#2979FF] px-4 py-2 font-medium text-gray-100 shadow hover:bg-[#2979FF]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 disabled:opacity-50"
                 >
                   <PictureIcon className="size-4" />
                   Generate Image
@@ -492,8 +492,8 @@ function ShowCodeButton({
               />
 
               <p>
-                That&apos;s it! You should see the URL of your image printed on the
-                screen.
+                That&apos;s it! You should see the URL of your image printed on
+                the screen.
               </p>
             </div>
           </div>
